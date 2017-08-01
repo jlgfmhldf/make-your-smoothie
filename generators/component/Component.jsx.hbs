@@ -1,0 +1,32 @@
+import React, { PureComponent } from 'react'
+import {
+	string,
+	number,
+	bool,
+	array,
+	func,
+	node,
+} from 'prop-types'
+import noop from 'noop3'
+
+import s from './{{ properCase name }}.css'
+
+export default class {{ properCase name }} extends PureComponent {
+	static propTypes = {
+
+	}
+
+	static defaultProps = {
+
+	}
+
+	render() {
+		// const {  } = this.props
+
+		return (
+			<div className={ s.{{ properCase name }} }>
+				{{ properCase name }}
+			</div>
+		)
+	}
+}

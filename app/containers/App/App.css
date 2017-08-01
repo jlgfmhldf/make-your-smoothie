@@ -1,0 +1,28 @@
+@import '../../styles/variables.css';
+@import '../../styles/fonts.css';
+
+.App {
+    width: 1020px;
+    margin: auto;
+}
+
+.h1 {
+    background: #ff4081;
+    display: inline-block;
+    padding: .3em;
+    color: var(--main)
+}
+
+.caloriesInput {
+    width: 33%;
+}
+
+@media all and (max-width: 600px){
+    .App {
+        width: 100%;
+    }
+    
+    .caloriesInput {
+        width: 100%;
+    }
+}

@@ -1,0 +1,11 @@
+.Loading {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.spinner {
+	display: block;
+}

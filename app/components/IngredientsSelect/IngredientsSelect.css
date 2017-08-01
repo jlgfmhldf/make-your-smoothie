@@ -1,0 +1,14 @@
+.IngredientsSelect {
+	display: block;
+}
+
+.list {
+	display: block;
+	padding: 0;
+	margin: 0 -0.5rem;
+}
+
+.listItem {
+	display: inline-block;
+	padding: 0.5rem;
+}
