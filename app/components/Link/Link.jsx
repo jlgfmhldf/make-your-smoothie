@@ -3,7 +3,7 @@ import { string, func } from 'prop-types'
 import noop from 'noop3'
 import {
 	Link as ToolboxLink,
-} from 'react-toolbox'
+} from 'react-toolbox/lib/link'
 import s from './Link.css'
 
 export default class Link extends PureComponent {

@@ -1,9 +1,8 @@
 import React, { PureComponent } from 'react'
 import { string } from 'prop-types'
-import Chip from 'react-toolbox/lib/chip'
-import Avatar from 'react-toolbox/lib/avatar'
+import { Chip } from 'react-toolbox/lib/chip'
+import { Avatar } from 'react-toolbox/lib/avatar'
 import s from './SmoothiesCard.css'
-
 
 export default class SmoothiesCardInfoItem extends PureComponent {
 	static propTypes = {

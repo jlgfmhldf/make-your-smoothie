@@ -1,13 +1,8 @@
 import React, { PureComponent } from 'react'
 import { number, string, func } from 'prop-types'
 import noop from 'noop3'
-import {
-	CardMedia,
-	CardTitle,
-	CardText,
-} from 'react-toolbox'
-import Card from 'react-toolbox/lib/card'
-import Button from 'react-toolbox/lib/button'
+import { Card, CardMedia, CardTitle, CardText } from 'react-toolbox/lib/card'
+import { Button } from 'react-toolbox/lib/button'
 import InfoItem from './SmoothiesCardInfoItem'
 import s from './SmoothiesCard.css'
 

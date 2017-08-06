@@ -7,12 +7,8 @@ import {
 	bool,
 } from 'prop-types'
 import noop from 'noop3'
-import {
-	Layout,
-	Panel,
-	Input,
-	Snackbar,
-} from 'react-toolbox'
+import { Input } from 'react-toolbox/lib/input'
+import { Snackbar } from 'react-toolbox/lib/snackbar'
 import IngredientsSelect from '../../components/IngredientsSelect'
 import SmoothiesList from '../../components/SmoothiesList'
 import Loading from '../../components/Loading'
@@ -93,35 +89,31 @@ export default class App extends PureComponent {
 		return (
 			<div className={s.App}>
 				{loading && <Loading />}
-				<Layout>
-					<Panel>
-						<h1 className={s.h1}>MAKE YOUR SMOOTHIE</h1>
-						<p>
-							Выберите продукты, которые есть у вас в холодильнике:
-						</p>
-						<IngredientsSelect
-							value={selectedIngredients}
-							list={ingredients}
-							onSelect={this.handleSelectIngredients}
-							onInput={findIngredient}
-						/>
-						<div className={s.caloriesInput}>
-							<Input
-								type='number'
-								value={calories}
-								label='Введите желаемую калорийность'
-								maxLength={3}
-								onChange={this.handleChangeCaloriesValue}
-							/>
-						</div>
-						<h2>
-							{smoothiesLength && selectedIngredientsLength && 'Результаты поиска'}
-							{smoothiesLength && !selectedIngredientsLength && 'Все смузи'}
-							{!smoothiesLength && selectedIngredientsLength && 'Ничего не найдено'}
-						</h2>
-						<SmoothiesList list={smoothies} />
-					</Panel>
-				</Layout>
+				<h1 className={s.h1}>MAKE YOUR SMOOTHIE</h1>
+				<p>
+					Выберите продукты, которые есть у вас в холодильнике:
+				</p>
+				<IngredientsSelect
+					value={selectedIngredients}
+					list={ingredients}
+					onSelect={this.handleSelectIngredients}
+					onInput={findIngredient}
+				/>
+				<div className={s.caloriesInput}>
+					<Input
+						type='number'
+						value={calories}
+						label='Введите желаемую калорийность'
+						maxLength={3}
+						onChange={this.handleChangeCaloriesValue}
+					/>
+				</div>
+				<h2>
+					{smoothiesLength && selectedIngredientsLength && 'Результаты поиска'}
+					{smoothiesLength && !selectedIngredientsLength && 'Все смузи'}
+					{!smoothiesLength && selectedIngredientsLength && 'Ничего не найдено'}
+				</h2>
+				<SmoothiesList list={smoothies} />
 				<Snackbar
 					action='Dismiss'
 					active={isShowSnackbar}

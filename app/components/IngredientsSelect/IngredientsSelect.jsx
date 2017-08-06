@@ -4,9 +4,7 @@ import {
 	func,
 } from 'prop-types'
 import noop from 'noop3'
-import {
-	Autocomplete,
-} from 'react-toolbox'
+import { Autocomplete } from 'react-toolbox/lib/autocomplete'
 
 import s from './IngredientsSelect.css'
 
