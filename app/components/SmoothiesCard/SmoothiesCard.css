@@ -1,3 +1,8 @@
+@import '../../../node_modules/react-toolbox/src/components/variables.css';
+
+.SmoothiesCard {
+}
+
 .info {
     display: flex;
     justify-content: center;
@@ -7,3 +12,4 @@
 .button {
     display: block;
 }
+
