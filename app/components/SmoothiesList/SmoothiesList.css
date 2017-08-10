@@ -11,7 +11,7 @@
 }
 
 @media all and (max-width: 600px){
-	.SmoothiesList {
-		columns: initial;
+	.item {
+		width: 100%;
 	}
 }
