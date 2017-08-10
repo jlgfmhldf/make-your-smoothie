@@ -39,46 +39,43 @@ export default class SmoothiesCard extends PureComponent {
 			onView,
 		} = this.props
 
-		const subtitle = []
-
-		proteins && subtitle.push(`Белки: ${proteins}`)
-		fats && subtitle.push(`Жиры: ${fats}`)
-		carbohydrates && subtitle.push(`Углеводы: ${carbohydrates}`)
+		const showInfo = proteins && carbohydrates && fats && calories
 
 
 		return (
 			<div className={s.SmoothiesCard}>
 				<Card>
-					<CardTitle
-						title={title}
-					/>
-					<div className={s.info}>
-						{proteins && <InfoItem
-							title='Б'
-							color='#97CC04'
-							value={proteins}
-						/>}
-						{fats && <InfoItem
-							title='Ж'
-							color='#EEB902'
-							value={fats}
-						/>}
-						{carbohydrates && <InfoItem
-							title='У'
-							color='#F45D01'
-							value={carbohydrates}
-						/>}
-						{calories && <InfoItem
-							title='К'
-							color='#2D7DD2'
-							value={calories}
-						/>}
-					</div>
 					<CardMedia
-						aspectRatio="wide"
+						aspectRatio="square"
 						image={image}
-					/>
-					{/*{description && <CardText>{description}</CardText>}*/}
+					>
+						<div className={s.title}>
+							<CardTitle title={title}>
+								{showInfo && <div className={s.info}>
+									{proteins && <InfoItem
+										title='Б'
+										color='rgb(151, 204, 4)'
+										value={proteins}
+									/>}
+									{fats && <InfoItem
+										title='Ж'
+										color='#EEB902'
+										value={fats}
+									/>}
+									{carbohydrates && <InfoItem
+										title='У'
+										color='#F45D01'
+										value={carbohydrates}
+									/>}
+									{calories && <InfoItem
+										title='К'
+										color='#2D7DD2'
+										value={calories}
+									/>}
+								</div>}
+							</CardTitle>	
+						</div>
+					</CardMedia>
 					<div className={s.button}>
 						<Button
 							label="Приготовить"
@@ -93,3 +90,4 @@ export default class SmoothiesCard extends PureComponent {
 		)
 	}
 }
+

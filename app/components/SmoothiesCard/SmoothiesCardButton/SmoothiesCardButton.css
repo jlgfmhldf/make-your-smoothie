@@ -1,29 +1,12 @@
 @import '../../../../node_modules/react-toolbox/src/components/colors.css';
 @import '../../../../node_modules/react-toolbox/src/components/variables.css';
 @import '../../../../node_modules/react-toolbox/src/components/button/config.css';
-@import '../../../styles/variables.css';
 
 .button {
-	align-content: center;
-	align-items: center;
-	border: 0;
-	cursor: pointer;
-	display: inline-block;
-	flex-direction: row;
-	font-size: calc(1.4 * var(--unit));
-	font-weight: 500;
+	font-weight: 600;
 	height: var(--button-height);
-	justify-content: center;
-	letter-spacing: 0;
 	line-height: var(--button-height);
-	outline: none;
-	padding: 0;
-	position: relative;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	white-space: nowrap;
-	/*background-color: var(--palette-purple-800) !important;*/
+	color: deeppink !important;
 	width: 100%;
 }
 
