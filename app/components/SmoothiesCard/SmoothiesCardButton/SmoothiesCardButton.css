@@ -1,0 +1,15 @@
+@import '../../../../node_modules/react-toolbox/src/components/colors.css';
+@import '../../../../node_modules/react-toolbox/src/components/variables.css';
+@import '../../../../node_modules/react-toolbox/src/components/button/config.css';
+
+.button {
+	font-weight: 600;
+	height: var(--button-height);
+	line-height: var(--button-height);
+	color: deeppink !important;
+	width: 100%;
+}
+
+.raised {
+	box-shadow: var(--shadow-8p);
+}

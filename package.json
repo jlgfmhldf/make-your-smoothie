@@ -24,6 +24,7 @@
     "prop-types": "^15.5.8",
     "ramda": "^0.24.1",
     "react": "^15.5.4",
+    "react-css-themr": "^2.1.2",
     "react-dom": "^15.5.4",
     "react-md-spinner": "^0.2.5",
     "react-redux": "^5.0.5",

@@ -1,9 +1,29 @@
+@import '../../../node_modules/react-toolbox/src/components/variables.css';
+
+.SmoothiesCard {
+}
+
 .info {
     display: flex;
-    justify-content: center;
-    margin: 1rem 0;
 }
 
 .button {
     display: block;
 }
+
+.title {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75))
+}
+
+
+.infoItem {
+    display: inline-flex;
+    border-radius: calc(0.2 * 10px);
+    padding: 0.2rem;
+    margin: 0.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+

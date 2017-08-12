@@ -1,7 +1,5 @@
 import React, { PureComponent } from 'react'
 import { string } from 'prop-types'
-import { Chip } from 'react-toolbox/lib/chip'
-import { Avatar } from 'react-toolbox/lib/avatar'
 import s from './SmoothiesCard.css'
 
 export default class SmoothiesCardInfoItem extends PureComponent {
@@ -21,14 +19,16 @@ export default class SmoothiesCardInfoItem extends PureComponent {
 		} = this.props
 
 		return (
-			<div className={s.infoItem}>
-				<Chip>
-					<Avatar
-						title={title}
-						style={{backgroundColor: color}}
-					/>
-					{value}
-				</Chip>
+			<div 
+				className={s.infoItem}
+				style={{
+					backgroundColor: color,
+				}}
+			>
+				<div className={s.infoTitle}>
+					{title}
+				</div>
+				:&nbsp;{value}
 			</div>
 		)
 	}
