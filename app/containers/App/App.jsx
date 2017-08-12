@@ -118,7 +118,7 @@ export default class App extends PureComponent {
 					action='Dismiss'
 					active={isShowSnackbar}
 					label={snackbarText}
-					timeout={1000}
+					timeout={3000}
 					onTimeout={hideSnackBar}
 					onClick={hideSnackBar}
 					type='warning'

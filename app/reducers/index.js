@@ -56,7 +56,6 @@ const defaultState = {
 	isShowLoader: false,
 }
 
-/* eslint-disable no-unused-vars */
 export default function (state = defaultState, { type, payload }) {
 	switch (type) {
 
@@ -82,9 +81,8 @@ export default function (state = defaultState, { type, payload }) {
 				...state,
 				snackbar: {
 					show: true,
-					text: 'Ничего не найдено',
-				},
-				findedSmoothies: [],
+					text: `Смузи с ингредиентами [ ${ingredients.join(', ')} ] не найдены`,
+				}
 			}
 		}
 
@@ -147,7 +145,7 @@ export default function (state = defaultState, { type, payload }) {
 	}
 
 	case LOAD_SMOOTHIES_LIST_SUCCESS: {
-		const {smoothies} = payload
+		const { smoothies } = payload
 
 		return {
 			...state,
