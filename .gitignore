@@ -1,3 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 node_modules/
 .DS_Store
+public/*.json
+public/*.woff2
+public/app.min.js
+public/style.css
