@@ -14,7 +14,7 @@ export default class SmoothiesCard extends PureComponent {
 		image: string,
 		description: string,
 		calories: number,
-		carbohydrates: number,
+		carbohydrate: number,
 		proteins: number,
 		fats: number,
 		link: string,
@@ -31,15 +31,14 @@ export default class SmoothiesCard extends PureComponent {
 			image,
 			description,
 			calories,
-			carbohydrates,
+			carbohydrate,
 			proteins,
 			fats,
 			link,
 			onView,
 		} = this.props
 
-		const showInfo = proteins && carbohydrates && fats && calories
-
+		const showInfo = proteins && carbohydrate && fats && calories
 
 		return (
 			<div className={s.SmoothiesCard}>
@@ -61,10 +60,10 @@ export default class SmoothiesCard extends PureComponent {
 										color='#EEB902'
 										value={fats}
 									/>}
-									{carbohydrates && <InfoItem
+									{carbohydrate && <InfoItem
 										title='У'
 										color='#F45D01'
-										value={carbohydrates}
+										value={carbohydrate}
 									/>}
 									{calories && <InfoItem
 										title='К'
@@ -72,7 +71,7 @@ export default class SmoothiesCard extends PureComponent {
 										value={calories}
 									/>}
 								</div>}
-							</CardTitle>	
+							</CardTitle>
 						</div>
 					</CardMedia>
 					<div className={s.button}>

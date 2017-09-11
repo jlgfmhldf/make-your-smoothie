@@ -40,7 +40,7 @@ const findSmoothies = (
 }
 
 const filterByCalories = calories =>
-	item => item.nutrition_value.calories < calories
+	item => item.nutrition.calories < calories
 
 const defaultState = {
 	selectedIngredients: [],

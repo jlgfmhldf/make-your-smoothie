@@ -17,8 +17,8 @@ export default class SmoothiesList extends PureComponent {
 
 	renderItem = ({
 		title,
-		nutrition_value: {
-			carbohydrates,
+		nutrition: {
+			carbohydrate,
 			proteins,
 			fats,
 			calories,
@@ -34,7 +34,7 @@ export default class SmoothiesList extends PureComponent {
 				title={title}
 				proteins={proteins}
 				fats={fats}
-				carbohydrates={carbohydrates}
+				carbohydrate={carbohydrate}
 				calories={calories}
 				image={image || `https://placeimg.com/800/450/nature?${key}`} //TODO
 				link={link}
